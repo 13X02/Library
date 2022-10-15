@@ -12,32 +12,32 @@
     <div class="wrapper">
         <div class="header">
             <div class="left-head">
-
-            </div>
-            <div class="right-header">
                 <p>Library of Ohara</p>
             </div>
+            <div class="menu-bar">
+                <button id="pop-button">+ New</button>
+            </div>
         </div>
-        <div class="menu-bar">
-            <button id="pop-button">+ New</button>
-        </div>
+        
             <div class="modal">
-                <div class="model-content">
-                    <form id="form" action="'/script.js">
+                    <div class="top-close">
                         <span class="close">&times;</span>
-                        <div class="input">
-                            <input type="text" name="" id="title"placeholder="Title"><br>
-                            <input type="text" id="author"placeholder="Author"><br>
-                            <input type="number" id="pages"placeholder="No of Pages"><br>
-                        </div>
-                        <div class="checkbox">
-                            <label for="read">Read</label>
-                            <input type="radio" name="read" id="read">
-                        </div>
+                    </div>
+                    <div class="formIP">
+                        <form id="form" action="'/script.js">
+                            <div class="input">
+                                <input type="text" name="" id="title"placeholder="Title"><br>
+                                <input type="text" id="author"placeholder="Author"><br>
+                                <input type="number" id="pages"placeholder="No of Pages"><br>
+                            </div>
+                            <div class="checkbox">
+                                <label for="read">Read</label>
+                                <input type="radio" name="read" id="read">
+                            </div>
                         
-                        <button class="submit" type="submit"form='form'>Add</button>
-                    </form>
-                </div>
+                            <button class="submit" type="submit"form='form'>Add</button>
+                        </form>
+                    </div>
             </div>
             <div id="lib-cont">
 
