@@ -10,37 +10,64 @@ body{
     background-color: #81a7dd;
     align-items: center;
 }
-.menu-bar{
-    display: flex;
+
+.modal{
+    display: none;
+    position: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+    background-color: whitesmoke;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-}
-.shelf{
-    border-collapse:collapse ;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: 'Courier New', Courier, monospace;
-    min-width:400px;
-    box-shadow:  0 0 20px rgba(0, 0, 0, 0.15);;
-}
-.shelf thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-}
-.shelf th,
-.shelf td {
-    padding: 12px 15px;
-}
-.shelf tbody tr {
-    border-bottom: 1px solid #dddddd;
 }
 
-.shelf tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+.close{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+#form{
+    padding: 100px;
+}
+.close:hover,.close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#lib-cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.shelf tr:last-of-type {
-    border-bottom: 2px solid #009879;
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    border-radius:20px ;
+    height: 300px;
+    width: 300px;
+    padding: 15px;
+    margin: 20px;
+    background-color: aquamarine;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.author{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.pages{
+    font-size: 25px;
+    margin-bottom: 20px;
 }

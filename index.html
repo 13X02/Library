@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="wrapper">
         <div class="header">
             <div class="left-head">
@@ -18,32 +19,33 @@
             </div>
         </div>
         <div class="menu-bar">
-            <button>+ New</button>
+            <button id="pop-button">+ New</button>
         </div>
-        <div class="content">
-            <table class="shelf">
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Author</th>
-                        <th>Pages</th>
-                        <th>Read</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>title</td>
-                        <td>Author</td>
-                        <td>pages</td>
-                        <td><input type="checkbox" name="read" id="read"></td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </div>
+            <div class="modal">
+                <div class="model-content">
+                    <form id="form" action="'/script.js">
+                        <span class="close">&times;</span>
+                        <div class="input">
+                            <input type="text" name="" id="title"placeholder="Title"><br>
+                            <input type="text" id="author"placeholder="Author"><br>
+                            <input type="number" id="pages"placeholder="No of Pages"><br>
+                        </div>
+                        <div class="checkbox">
+                            <label for="read">Read</label>
+                            <input type="radio" name="read" id="read">
+                        </div>
+                        
+                        <button class="submit" type="submit"form='form'>Add</button>
+                    </form>
+                </div>
+            </div>
+            <div id="lib-cont">
+
+            </div>
         <div class="footer">
 
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
